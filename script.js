@@ -98,5 +98,6 @@ async function validWord(word) {
 async function getDailyWord() {
 	const response = await fetch("https://words.dev-apis.com/word-of-the-day");
 	const data = await response.json();
+	console.log(data.word);
 	return data.word;
 }

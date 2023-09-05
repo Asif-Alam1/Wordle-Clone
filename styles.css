@@ -50,13 +50,13 @@ body {
 }
 
 .correct {
-	border: 1px solid #aa00ff;
-	animation: neon-glow-purple 1s infinite alternate;
+	border: 1px solid green;
+	animation: neon-glow-green 1s infinite alternate;
 }
 
 .half-correct {
-	border: 1px solid #ff00aa;
-	animation: neon-glow-purple 1s infinite alternate;
+	border: 1px solid yellow;
+	animation: neon-glow-yellow 1s infinite alternate;
 }
 
 /* Neon Glow Animation - Purple */
@@ -67,6 +67,26 @@ body {
 	100% {
 		box-shadow: 0 0 5px #aa00ff, 0 0 10px #aa00ff, 0 0 20px #aa00ff,
 			0 0 40px #aa00ff, 0 0 60px #aa00ff;
+	}
+}
+
+@keyframes neon-glow-green {
+	0% {
+		box-shadow: 0 0 5px green, 0 0 10px green, 0 0 20px green;
+	}
+	100% {
+		box-shadow: 0 0 5px green, 0 0 10px green, 0 0 20px green, 0 0 40px green,
+			0 0 60px green;
+	}
+}
+
+@keyframes neon-glow-yellow {
+	0% {
+		box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow;
+	}
+	100% {
+		box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow,
+			0 0 40px yellow, 0 0 60px yellow;
 	}
 }
 
